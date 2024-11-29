@@ -24,4 +24,12 @@ public class CrimeService {
     public Crime getCrimeById(Long id) {
         return crimeRepository.findById(id).orElse(null);
     }
+
+    public boolean deleteCrime(Long id) {
+        if (!crimeRepository.existsById(id)) {
+            return false;
+        }
+        crimeRepository.deleteById(id);
+        return true;
+    }
 }
