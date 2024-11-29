@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Crime List</title>
+</head>
+<body>
+<h1>All Crimes</h1>
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Location</th>
+    </tr>
+    <tr th:each="crime: ${crimes}">
+        <td th:text="${crime.id}"></td>
+        <td th:text="${crime.description}"></td>
+        <td th:text="${crime.date}"></td>
+        <td th:text="${crime.location}"></td>
+    </tr>
+</table>
+<a href="/">Back to Home</a>
+</body>
+</html>
