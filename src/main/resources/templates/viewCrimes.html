@@ -17,6 +17,13 @@
         <td th:text="${crime.description}"></td>
         <td th:text="${crime.date}"></td>
         <td th:text="${crime.location}"></td>
+        <td>
+            <!--             Form for deleting the crimes-->
+            <form th:action="@{/crimes/{id}(id=${crime.id})}" method="post">
+                <input type="hidden" name="_method" value="delete">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
     </tr>
 </table>
 <a href="/">Back to Home</a>
