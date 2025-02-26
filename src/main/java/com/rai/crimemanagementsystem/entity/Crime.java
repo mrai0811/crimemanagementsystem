@@ -4,6 +4,7 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+
 @Entity
 public class Crime {
     @Id
@@ -13,6 +14,7 @@ public class Crime {
     private String date;
     private String location;
 
+    //Constructor of the entity crime
     public Crime() {
     }
 
