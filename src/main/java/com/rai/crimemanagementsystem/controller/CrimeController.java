@@ -53,4 +53,17 @@ public class CrimeController {
         }
         return "redirect:/crimes";
     }
+
+//    @DeleteMapping("/{id}")
+//    public String deleteCrimeById(@PathVariable("id") Long id, RedirectAttributes redirectAttributes) {
+//        boolean isDeleted = crimeService.deleteCrime(id);
+//        if (isDeleted) {
+//            redirectAttributes.addFlashAttribute("successMessage", "Crime with ID " + id + " deleted successfully.");
+//        } else {
+//            redirectAttributes.addFlashAttribute("errorMessage", "Crime with ID " + id + " does not exist.");
+//        }
+//        return "redirect:/crimes";
+//    }
+
+//    let me add some comment to test it
 }
